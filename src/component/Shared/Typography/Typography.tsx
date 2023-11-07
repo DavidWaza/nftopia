@@ -1,12 +1,12 @@
 import { ReactNode, FC } from "react";
 
-interface HeadingProps {
+interface HeaderProps {
   children: ReactNode;
   className?: string;
 }
- const Heading: FC<HeadingProps> = ({ children, className }) => {
-  let fontSize = "text-[123.036px]";
-  let fontWeight = "text-extrabold";
+ const Header: FC<HeaderProps> = ({ children, className }) => {
+  let fontSize = "text-[30px] lg:text-[123.036px]";
+  let fontWeight = "font-bold";
   let letterSpacing = "tracking-[6.152px]";
   let color = "text-[#F4F4F4]";
 
@@ -69,10 +69,10 @@ interface TextProps {
     letterSpacing = "tracking-[1.2px]";
   }
   return (
-    <p className={`${fontSize} ${fontWeight} ${letterSpacing} ${className}`}>
+    <p className={`${fontSize} ${fontWeight} ${letterSpacing} ${className} `}>
       {children}
     </p>
   );
 };
 
-export { Heading, Title, Text };
+export { Header, Title, Text };

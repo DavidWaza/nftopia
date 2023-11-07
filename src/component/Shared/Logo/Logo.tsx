@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text } from '../Shared/Typography/Typography'
+import { Text } from '../Typography/Typography'
 
 const Logo = () => {
   return (

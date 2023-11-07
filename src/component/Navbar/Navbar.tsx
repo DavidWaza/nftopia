@@ -1,8 +1,8 @@
 import React from "react";
-import { Heading, Text, Title } from "../Shared/Typography/Typography";
-import Logo from "../Logo/Logo";
+import { Text } from "../Shared/Typography/Typography";
+import Logo from "../Shared/Logo/Logo";
 import Link from "next/link";
-import Container from "../Container/Container";
+import Container from "../Shared/Container/Container";
 import Button from "../Shared/Button/Button";
 
 const navlists = [
@@ -14,7 +14,7 @@ const navlists = [
 ];
 const Navbar = () => {
   return (
-    <div>
+    <div className="hidden lg:block">
       <Container>
         <nav className="h-[101px] py-[30px] flex justify-between items-center">
           <div>

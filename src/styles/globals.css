@@ -12,6 +12,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
+    /* --background-start-rgb: 22, 20, 26;
+    --background-end-rgb: 22, 20, 26; */
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
@@ -19,30 +21,35 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 .font-kanit {
   font-family: 'Kanit', sans-serif;
 }
+
 .font-space-grotesk {
-font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.hero-spiral {
+  background-image: url("/assets/herospiral.png");
+  background-position: 0%;
+  background-size: contain;
+  background-repeat: no-repeat;
+
 }
 
 /* GLOBAL BUTTON */
-
 .button {
   appearance: button;
   background-color: #92FA40;
   background-image: none;
   border: 1px solid #000;
   border-radius: 4px;
-  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
   box-sizing: border-box;
   color: #000;
   cursor: pointer;
@@ -91,7 +98,7 @@ font-family: 'Space Grotesk', sans-serif;
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
-  
+
 }
 
 @media (min-width: 768px) {
