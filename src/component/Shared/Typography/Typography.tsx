@@ -32,11 +32,11 @@ const Title: FC<TitleProps> = ({ variant, children, className }) => {
   let letterSpacing = "tracking-[4px]";
 
   if (variant === "small") {
-    fontSize = "text-[64px]";
+    fontSize = "text-[18px] lg:text-[64px]";
     fontWeight = "font-medium";
     letterSpacing = "tracking-[3px]";
   } else if (variant === "normal") {
-    fontSize = "text-[80px]";
+    fontSize = "text-[20px] lg:text-[80px]";
     fontWeight = "font-bold";
     letterSpacing = "tracking-[4px]";
   }
