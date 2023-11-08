@@ -5,7 +5,7 @@ interface containerProps {
 }
 const Container:FC<containerProps> = ({children}) => {
   return (
-    <div className='px-[2rem] lg:px-[10rem]'>{children}</div>
+    <div className='px-[2rem]  xl:px-[3rem] 2xl:px-[20rem]'>{children}</div>
   )
 }
 
